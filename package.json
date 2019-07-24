@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./app.js",
+    "dev": "node --inspect ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,7 +16,10 @@
     "@hapi/joi": "^15.1.0",
     "@hapi/vision": "^5.5.2",
     "dotenv": "^8.0.0",
+    "hapi-auth-jwt2": "^8.6.1",
+    "hapi-pagination": "^2.1.0",
     "hapi-swagger": "^10.0.2",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.6.5",
     "sequelize": "^5.10.2",
     "sequelize-cli": "^5.5.0"
