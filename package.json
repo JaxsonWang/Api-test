@@ -1,14 +1,14 @@
 {
-  "name": "nodehapidev",
+  "name": "myapiserver",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "服务器Api开发",
+  "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
-    "dev": "node --inspect ./app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --inspect ./app.js",
+    "test": "node test/index.js"
   },
-  "author": "",
+  "author": "Jaxson",
   "license": "ISC",
   "dependencies": {
     "@hapi/good": "^8.2.0",
@@ -29,6 +29,11 @@
   "devDependencies": {
     "@hapi/code": "^6.0.0",
     "@hapi/lab": "^19.1.0",
+    "nodemon": "^1.19.1",
     "sequelize-cli": "^5.5.0"
+  },
+  "nodemonConfig": {
+    "ignore": ["test/*", "node_modules/*"],
+    "delay": "2500"
   }
 }
