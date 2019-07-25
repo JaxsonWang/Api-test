@@ -27,6 +27,8 @@
     "sequelize": "^5.10.2"
   },
   "devDependencies": {
+    "@hapi/code": "^6.0.0",
+    "@hapi/lab": "^19.1.0",
     "sequelize-cli": "^5.5.0"
   }
 }

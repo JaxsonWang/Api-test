@@ -31,6 +31,7 @@ module.exports = (server) => {
     server.auth.strategy('jwt', 'jwt', {
         key: env.JWT_SECRET,
         validate,
+        verifyOptions: { ignoreExpiration: true }
     });
     server.auth.default('jwt');
 };
